@@ -11,6 +11,7 @@
 
 	<properties>
 		<javaee.version>7.0</javaee.version>
+		<spring.version>4.3.6.RELEASE</spring.version>
 	</properties>
 	<dependencies>
 
@@ -22,8 +23,15 @@
 			<scope>provided</scope>
 		</dependency>
 
+		<!-- Spring -->
 		<dependency>
-			<!-- JUNIT -->
+			<groupId>org.springframework</groupId>
+			<artifactId>spring-webmvc</artifactId>
+			<version>${spring.version}</version>
+		</dependency>
+		
+		<!-- JUNIT -->
+		<dependency>
 			<groupId>junit</groupId>
 			<artifactId>junit</artifactId>
 			<version>3.8.1</version>
@@ -34,7 +42,7 @@
 		<finalName>onlineshopping</finalName>
 
 		<plugins>
-		<!-- Update to the latest Java Version -->
+			<!-- Update to the latest Java Version -->
 			<plugin>
 				<artifactId>maven-compiler-plugin</artifactId>
 				<version>3.1</version>
